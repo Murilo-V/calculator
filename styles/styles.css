@@ -126,6 +126,8 @@ header a {
 
 .calculator-container .calculator-body .calculator-keyboard .keyboard-numbers button:hover, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations button:hover {
   opacity: 0.8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .calculator-container .calculator-body .calculator-keyboard .keyboard-numbers #btn-clear, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations #btn-clear {
