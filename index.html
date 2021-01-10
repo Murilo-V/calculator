@@ -3,12 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Calculator</title>
 </head>
 <body>
     <header>
-        <h1>Calculator</h1>
+        <h1>Simple Calculator</h1>
+        <p>made with <i class="fas fa-heart"></i> by <a href="http://github.com/murilo-v" target="_blank" rel="noopener noreferrer">Murilo V.</a></p>
     </header>
+
+    <section class="calculator-container">
+        <div class="calculator-body">
+            <div class="calculator-panel">0</div>
+
+            <div class="calculator-keyboard">
+                <div class="keyboard-numbers">
+                    <div>
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                    <div>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div>
+                        <button>0</button>
+                        <button>.</button>
+                    </div>
+                </div>
+                <div class="keyboard-operations">
+                    <div>
+                        <button>+</button>
+                        <button>-</button>
+                        <button>/</button>
+                        <button>*</button>
+                    </div>
+                    <div>
+                        <button id="btn-clear">Limpar</button>
+                    </div>
+                    <div>
+                        <button id="btn-result">Resultado</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

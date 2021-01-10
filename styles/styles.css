@@ -2,7 +2,143 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  border: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F60554), color-stop(#F6D41B), to(#F6D41B));
+  background: linear-gradient(#F60554, #F6D41B, #F6D41B);
+}
+
+header {
+  color: #F6D41B;
+  width: 100vw;
+  padding: 20px;
+  font-weight: 700;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+header p {
+  font-weight: 500;
+}
+
+header a {
+  color: #F6D41B;
+}
+
+.calculator-container {
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculator-container .calculator-body {
+  margin-top: 120px;
+  width: 70vw;
+  background-color: #F60554;
+  border-radius: 20px;
+  border: 2px dashed #F6D41B;
+}
+
+.calculator-container .calculator-body .calculator-panel {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: right;
+  font-size: 20pt;
+  font-weight: 700;
+  padding: 1%;
+  background-color: #F6D41B;
+  color: #F60554;
+}
+
+.calculator-container .calculator-body .calculator-keyboard {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers button, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations button {
+  padding: 10px;
+  width: 40px;
+  margin: 3px;
+  background-color: #F6D41B;
+  border-radius: 7px;
+  color: #F60554;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  font-size: 12pt;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers button:hover, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations button:hover {
+  opacity: 0.8;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers #btn-clear, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations #btn-clear {
+  background-color: #F60554;
+  color: #F6D41B;
+  border: 2px solid #F6D41B;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers #btn-result, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations #btn-result {
+  border: 3px dashed #F60554;
+}
+
+.calculator-container .calculator-body .calculator-keyboard .keyboard-numbers #btn-clear, .calculator-container .calculator-body .calculator-keyboard .keyboard-numbers #btn-result, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations #btn-clear, .calculator-container .calculator-body .calculator-keyboard .keyboard-operations #btn-result {
+  width: 170px;
 }
 /*# sourceMappingURL=styles.css.map */
