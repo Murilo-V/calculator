@@ -64,8 +64,7 @@ header a {
 }
 
 .calculator-container .calculator-body {
-  margin-top: 120px;
-  width: 70vw;
+  width: 35vw;
   background-color: #F60554;
   border-radius: 20px;
   border: 2px dashed #F6D41B;
@@ -75,9 +74,9 @@ header a {
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  text-align: right;
+  text-align: center;
   font-size: 20pt;
-  font-weight: 700;
+  font-weight: 600;
   padding: 1%;
   background-color: #F6D41B;
   color: #F60554;

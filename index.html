@@ -12,12 +12,12 @@
 <body>
     <header>
         <h1>Simple Calculator</h1>
-        <p>made with <i class="fas fa-heart"></i> by <a href="http://github.com/murilo-v" target="_blank" rel="noopener noreferrer">Murilo V.</a></p>
+        <p>maded with <i class="fas fa-heart"></i> by <a href="http://github.com/murilo-v" target="_blank" rel="noopener noreferrer">Murilo V.</a></p>
     </header>
 
     <section class="calculator-container">
         <div class="calculator-body">
-            <div class="calculator-panel">0</div>
+            <div class="calculator-panel">result area</div>
 
             <div class="calculator-keyboard">
                 <div class="keyboard-numbers">
@@ -42,21 +42,24 @@
                     </div>
                 </div>
                 <div class="keyboard-operations">
-                    <div>
+                    <div id="operators">
                         <button>+</button>
                         <button>-</button>
                         <button>/</button>
                         <button>*</button>
                     </div>
                     <div>
-                        <button id="btn-clear">Limpar</button>
+                        <button id="btn-clear">Clear</button>
                     </div>
                     <div>
-                        <button id="btn-result">Resultado</button>
+                        <button id="btn-result">Result</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 </body>
+<script src="scripts/calculator.js"></script>
+
 </html>
