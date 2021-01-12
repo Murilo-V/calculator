@@ -31,21 +31,24 @@ btnClear.onclick = function clear() {
 
 btnResult.onclick = function getResult() {
     if (panel.innerHTML === 'result area' || panel.innerHTML === 'invalid') {
-        panel.innerHTML = 'result area';
+      panel.innerHTML = 'result area';
     } else {
-        const expression = panel.innerHTML;
-        expression.split(/([^.\d])/g)
-        .map(value =>  (value.match(/\d/g) ? parseFloat(value, 0) : value))
+      const expression = panel.innerHTML;
+      const result = expression.split(/([^.\d])/g)
+        .map(value => (value.match(/\d/g) ? parseFloat(value, 0) : value))
         .reduce((acc, value, index, array) => {
-            if (value === '+') {
-                panel.innerHTML = (acc += array[index + 1])
-            } else if (value === '-') {
-                panel.innerHTML = (acc -= array[index + 1])
-            } else if (value === '*') {
-                panel.innerHTML = (acc *= array[index + 1])
-            } else if (value === '/') {
-                panel.innerHTML = (acc /= array[index + 1])
-            }
+          if (value === '+') {
+            return (acc += array[index + 1])
+          } else if (value === '-') {
+            return (acc -= array[index + 1])
+          } else if (value === '*') {
+            return (acc *= array[index + 1])
+          } else if (value === '/') {
+            return (acc /= array[index + 1])
+          } else {
+            return acc;
+          }
         });
+      panel.innerHTML = result
     }
-}
+  }
