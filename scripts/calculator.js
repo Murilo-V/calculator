@@ -38,13 +38,13 @@ btnResult.onclick = function getResult() {
         .map(value =>  (value.match(/\d/g) ? parseFloat(value, 0) : value))
         .reduce((acc, value, index, array) => {
             if (value === '+') {
-                panel.innerHTML = (acc = acc + array[index + 1])
+                panel.innerHTML = (acc += array[index + 1])
             } else if (value === '-') {
-                panel.innerHTML = (acc = acc - array[index + 1])
+                panel.innerHTML = (acc -= array[index + 1])
             } else if (value === '*') {
-                panel.innerHTML = (acc = acc * array[index + 1])
+                panel.innerHTML = (acc *= array[index + 1])
             } else if (value === '/') {
-                panel.innerHTML = (acc = acc / array[index + 1])
+                panel.innerHTML = (acc /= array[index + 1])
             }
         });
     }
