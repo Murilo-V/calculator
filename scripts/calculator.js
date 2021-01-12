@@ -35,19 +35,16 @@ btnResult.onclick = function getResult() {
     } else {
         const expression = panel.innerHTML;
         expression.split(/(\D)/g)
-        .map(value =>  (value.match(/\d/g) ? parseInt(value, 0) : value))
+        .map(value =>  (value.match(/\d/g) ? parseFloat(value, 0) : value))
         .reduce((acc, value, index, array) => {
-            switch (value) {
-              case "+":
+            if (value === '+') {
                 panel.innerHTML = (acc = acc + array[index + 1])
-              case "-":
+            } else if (value === '-') {
                 panel.innerHTML = (acc = acc - array[index + 1])
-              case "x":
+            } else if (value === '*') {
                 panel.innerHTML = (acc = acc * array[index + 1])
-              case "÷":
+            } else if (value === '/') {
                 panel.innerHTML = (acc = acc / array[index + 1])
-              default:
-                panel.innerHTML = 'result area';
             }
         });
     }
