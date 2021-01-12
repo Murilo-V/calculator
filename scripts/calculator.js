@@ -34,7 +34,7 @@ btnResult.onclick = function getResult() {
         panel.innerHTML = 'result area';
     } else {
         const expression = panel.innerHTML;
-        expression.split(/(\D)/g)
+        expression.split(/([^.\d])/g)
         .map(value =>  (value.match(/\d/g) ? parseFloat(value, 0) : value))
         .reduce((acc, value, index, array) => {
             if (value === '+') {
